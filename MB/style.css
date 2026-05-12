@@ -1,0 +1,1469 @@
+/* General CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+}
+
+html.snap {
+    scroll-snap-type: y mandatory;
+}
+
+img, picture {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Elements that should not underline on hover */
+.logo a:hover,
+.menu a:hover,
+.social-icons a:hover,
+.footer-social a:hover,
+.team-card:hover {
+    text-decoration: none;
+}
+
+/* General styles */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 19px;
+}
+
+/* ── Navigation bar ───────────────────────────────────── */
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.4s ease;
+}
+
+.header-graphite {
+    background-color: #353229;
+}
+
+.header-graphite .logo a,
+.header-graphite .burger-menu {
+    color: #fff;
+    transition: color 0.4s ease;
+}
+
+.header-graphite .menu a {
+    color: #fff;
+    transition: color 0.4s ease;
+}
+
+.header-graphite .social-icons img {
+    filter: brightness(0) invert(1);
+}
+
+.header-graphite #mobile-menu {
+    background-color: #353229;
+    border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-graphite #mobile-menu a {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 40px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #353229;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+}
+
+.logo strong {
+    font-weight: 700;
+}
+
+.menu {
+    display: none;
+    gap: 28px;
+}
+
+.menu a {
+    color: #F26A2E;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+.social-icons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.social-icons a {
+    display: none;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+    opacity: 0.6;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.burger-menu {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #353229;
+    display: block;
+}
+
+/* Mobile menu */
+#mobile-menu {
+    background-color: #fff;
+    border-top: 1px solid #d6d3cf;
+    padding: 10px 40px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 99;
+}
+
+#mobile-menu a {
+    display: block;
+    color: #F26A2E;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #d6d3cf;
+    text-align: center;
+}
+
+#mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px 0 4px;
+}
+
+#mobile-menu .mobile-menu-social a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-bottom: none;
+    color: inherit;
+}
+
+.mobile-menu-social img {
+    width: 20px;
+    height: 20px;
+}
+
+.header-graphite .mobile-menu-social img {
+    filter: brightness(0) invert(1);
+}
+
+/* ── Split Hero ───────────────────────────────────────── */
+/* ── Opening Panel ────────────────────────────────────── */
+.opening-panel {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    z-index: 10;
+    background-color: #353229;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 60px 80px;
+}
+
+.hero-scroll-space {
+    height: calc(2 * (100vh - 88px));
+}
+
+.opening-phrase {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 400;
+    color: #fff;
+    max-width: 860px;
+    line-height: 1.25;
+    text-align: right;
+}
+
+/* ── Split Hero ───────────────────────────────────────── */
+.split-hero {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Left panel: image */
+.left-panel {
+    min-height: 50vh;
+    background-color: #fff;
+}
+
+
+.panel-label {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+}
+
+/* Right panel: maroon / Sobre */
+.right-panel {
+    background-color: #852135;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 32px;
+    min-height: 50vh;
+}
+
+.right-panel p{
+    text-align: justify;
+}
+
+.section-title {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 400;
+    color: #fff;
+    align-self: flex-start;
+    margin-bottom: 32px;
+    letter-spacing: 0.01em;
+}
+
+.about-photo-frame {
+    border: 3px solid #353229;
+    padding: 4px;
+    max-width: 420px;
+    width: 100%;
+    min-height: 300px;
+}
+
+/* ── Portfolio Carousel ───────────────────────────────── */
+.portfolio-section {
+    position: sticky;
+    top: 88px;
+    z-index: 2;
+    height: calc(100vh - 88px);
+    background-color: #1a1815;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    background-color: #2a2724;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    z-index: 2;
+    padding: 0;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+}
+
+.carousel-btn svg {
+    width: 32px;
+    height: 32px;
+}
+
+.carousel-prev { left: 32px; }
+.carousel-next { right: 32px; }
+
+.carousel-dots {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.carousel-dot.active {
+    background: #fff;
+    transform: scale(1.25);
+}
+
+@media (max-width: 767px) {
+    .carousel-prev { left: 16px; }
+    .carousel-next { right: 16px; }
+    .carousel-btn { width: 36px; height: 36px; }
+}
+
+/* ── Serviços Section ─────────────────────────────────── */
+.servicos-section {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 88px);
+}
+
+.servicos-left {
+    flex: 1;
+    background-color: #F26A2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 40px;
+}
+
+.servicos-title {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.servicos-image {
+    width: 100%;
+    max-width: 420px;
+    min-height: 320px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.servicos-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.servicos-right {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 48px;
+}
+
+/* ── Accordion ────────────────────────────────────────── */
+.accordion {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #d6d3cf;
+}
+
+.accordion-item:first-child {
+    border-top: 1px solid #d6d3cf;
+}
+
+.accordion-trigger {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 18px 0;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+}
+
+.accordion-trigger span {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    color: #353229;
+    line-height: 1.3;
+}
+
+.accordion-arrow {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #353229;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-arrow {
+    transform: rotate(90deg);
+}
+
+.accordion-body {
+    display: none;
+    padding: 0 0 18px;
+}
+
+.accordion-item.open .accordion-body {
+    display: block;
+}
+
+.accordion-body p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.accordion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-list li {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    color: #4a4540;
+    line-height: 1.6;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0ede9;
+    padding-left: 14px;
+    position: relative;
+}
+
+.accordion-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #d6d3cf;
+}
+
+.cta-button {
+    align-self: center;
+    margin-top: 40px;
+    background-color: #852135;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cta-button:hover {
+    opacity: 0.85;
+}
+
+/* ── Newsletter Section ───────────────────────────────── */
+.newsletter-section {
+    position: relative;
+    z-index: 4;
+    background-color: #353229;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(90vh - 115px);
+}
+
+.newsletter-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px;
+}
+
+.newsletter-left p{
+    font-size: 19px;
+}
+
+.newsletter-title {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.newsletter-subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.75;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    background-color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    color: #353229;
+    outline: none;
+}
+
+.newsletter-btn {
+    padding: 14px 24px;
+    background-color: #F26A2E;
+    color: #fff;
+    border: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.newsletter-btn:hover {
+    opacity: 0.85;
+}
+
+.newsletter-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px;
+    min-height: 300px;
+    background-color: #353229;
+}
+
+.newsletter-right img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+.site-footer {
+    position: relative;
+    z-index: 5;
+    background-color: #852135;
+    padding: 20px 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-contact span {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.footer-contact em {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-style: italic;
+}
+
+.footer-contact strong {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer-contact a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-social img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-bottom p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.850rem;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-links a:hover {
+    opacity: 0.75;
+}
+
+/* ── Cookie Banner ────────────────────────────────────── */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #353229;
+    z-index: 1000;
+    padding: 20px 40px;
+    display: none;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cookie-banner p {
+    flex: 1;
+    min-width: 220px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12.8px;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.cookie-banner a {
+    color: #F26A2E;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.cookie-buttons button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+}
+
+.cookie-buttons button:hover {
+    opacity: 0.8;
+}
+
+#accept-all {
+    background-color: #F26A2E;
+    color: #fff;
+}
+
+#decline-all,
+#customise {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* ── Preference Modal ─────────────────────────────────── */
+#preference-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(53, 50, 41, 0.65);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#preference-modal.open {
+    display: flex;
+}
+
+.preference-box {
+    position: relative;
+    background-color: #fff;
+    padding: 48px;
+    max-width: 520px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.preference-box h2 {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 400;
+    color: #353229;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.preference-box ul {
+    list-style: none;
+    margin: 0 auto 24px;
+    max-width: 240px;
+}
+
+.preference-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid #d6d3cf;
+}
+
+.preference-box li:first-child {
+    border-top: 1px solid #d6d3cf;
+}
+
+.preference-box label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    color: #353229;
+}
+
+.preference-box input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #852135;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.preference-box input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.preference-box > a {
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #F26A2E;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.buttons-modal {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.buttons-modal button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.buttons-modal button:hover {
+    opacity: 0.8;
+}
+
+#save-preferences {
+    background-color: #353229;
+    color: #fff;
+}
+
+#preference-accept-all {
+    background-color: #F26A2E;
+    color: #fff;
+}
+
+.preference-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #353229;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+@media (max-width: 767px) {
+    .cookie-banner {
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cookie-buttons {
+        justify-content: stretch;
+    }
+
+    .cookie-buttons button {
+        flex: 1;
+    }
+
+    .preference-box {
+        padding: 32px 24px;
+    }
+
+    .buttons-modal {
+        flex-direction: column;
+    }
+
+    .buttons-modal button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ── Profile Pages ────────────────────────────────────── */
+.profile-nb {
+    background-color: #F26A2E;
+}
+
+.profile-acm {
+    background-color: #852135;
+}
+
+.header-transparent {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.header-transparent .logo a,
+.header-transparent .menu a,
+.header-transparent .burger-menu {
+    color: #fff;
+}
+
+.header-transparent .menu a:hover {
+    opacity: 0.7;
+}
+
+.header-transparent #mobile-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-nb .header-transparent #mobile-menu {
+    background-color: #F26A2E;
+}
+
+.profile-acm .header-transparent #mobile-menu {
+    background-color: #852135;
+}
+
+.header-transparent #mobile-menu a {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.profile-left {
+    flex: 2;
+    min-height: 40vh;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0 40px 60px;
+}
+
+.profile-left img {
+    width: 100%;
+    max-width: 440px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 60px;
+}
+
+.profile-name {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 32px;
+    line-height: 1.1;
+}
+
+.profile-name em {
+    font-style: italic;
+}
+
+.profile-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.profile-bio p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.profile-social {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile-social a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.82rem;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.profile-social a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* ── Profile page load animations ────────────────────── */
+@keyframes profileFadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.profile-acm .profile-name,
+.profile-nb .profile-name {
+    opacity: 0;
+    animation: profileFadeUp 0.7s ease forwards 0.1s;
+}
+
+.profile-acm .profile-bio p:nth-child(1),
+.profile-nb .profile-bio p:nth-child(1) {
+    opacity: 0;
+    animation: profileFadeUp 0.7s ease forwards 0.3s;
+}
+
+.profile-acm .profile-bio p:nth-child(2),
+.profile-nb .profile-bio p:nth-child(2) {
+    opacity: 0;
+    animation: profileFadeUp 0.7s ease forwards 0.45s;
+}
+
+.profile-acm .profile-social,
+.profile-nb .profile-social {
+    opacity: 0;
+    animation: profileFadeUp 0.7s ease forwards 0.6s;
+}
+
+/* ── Contact Page ─────────────────────────────────────── */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 88px);
+    scroll-snap-align: start;
+}
+
+.contact-left {
+    flex: 2;
+    min-height: 40vh;
+    background-color: #d6d3cf;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-left img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-right {
+    flex: 2;
+    background-color: #fff;
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: 'Sorts Mill Goudy', Georgia, serif;
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+    font-weight: 400;
+    color: #F26A2E;
+    line-height: 1.3;
+    margin-bottom: 36px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.82rem;
+    color: #353229;
+}
+
+.form-field input,
+.form-field textarea {
+    background-color: #EFEFED;
+    border: none;
+    padding: 10px 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    color: #353229;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    margin-top: 8px;
+    background-color: #852135;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+    opacity: 0.85;
+}
+
+/* ── Scroll reveal ────────────────────────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Responsive — mobile only ────────────────────────── */
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 32px 20px;
+    }
+
+    #mobile-menu {
+        padding: 10px 20px;
+    }
+
+    /* Opening panel — slightly less than full height so hero peeks at bottom */
+    .opening-panel {
+        height: 75vh;
+        padding: 32px 20px;
+        justify-content: flex-start;
+    }
+
+    .opening-phrase {
+        text-align: justify;
+        max-width: 100%;
+    }
+
+    /* Hide left panel on mobile — right panel fills the full fixed hero height */
+    .left-panel {
+        display: none;
+    }
+
+    .right-panel {
+        min-height: calc(100vh - 88px);
+        padding: 40px 20px;
+    }
+
+    /* Right panel text — white on maroon */
+    .right-panel p {
+        color: #EDEBE9;
+        margin: 8px 0;
+        text-align: justify;
+    }
+
+    /* Team section — remove sticky stacking on mobile */
+    .team-section {
+        position: relative;
+        top: auto;
+        min-height: auto;
+        padding: 48px 20px;
+    }
+
+    .team-card {
+        min-height: 420px;
+    }
+
+    /* Serviços section — remove sticky stacking on mobile */
+    .servicos-section {
+        position: relative;
+        top: auto;
+        min-height: auto;
+    }
+
+    .servicos-left {
+        padding: 40px 20px;
+        min-height: 40vh;
+    }
+
+    .servicos-right {
+        padding: 40px 20px;
+    }
+
+    .cta-button {
+        align-self: stretch;
+        text-align: center;
+    }
+
+    /* Newsletter + footer together fill one screen on mobile */
+    .page-end {
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 88px);
+        min-height: calc(100dvh - 88px);
+    }
+
+    .newsletter-section {
+        flex: 1;
+        min-height: 0;
+    }
+
+    .newsletter-left {
+        flex: 1;
+        padding: 40px 20px;
+    }
+
+    .newsletter-right {
+        display: none;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-input,
+    .newsletter-btn {
+        text-align: center;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 24px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer-links {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    /* Profile pages */
+    .profile-left {
+        padding: 40px 20px;
+        min-height: 35vh;
+    }
+
+    .profile-right {
+        padding: 40px 20px;
+    }
+
+    /* Contact page */
+    .contact-right {
+        padding: 40px 20px;
+    }
+}
+
+/* ── Responsive — tablet & desktop ───────────────────── */
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+
+    .social-icons a {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .split-hero {
+        flex-direction: row;
+    }
+
+    .left-panel,
+    .right-panel {
+        flex: 0 0 50%;
+        width: 50%;
+        min-height: calc(100vh - 88px);
+    }
+
+    .right-panel {
+        padding: 56px 48px;
+    }
+
+    .right-panel p{
+        margin: 10px;
+        color: #EDEBE9;
+    }
+
+    .team-cards {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .team-card {
+        flex: 1;
+        max-width: 460px;
+    }
+
+    .servicos-section {
+        flex-direction: row;
+    }
+
+    .servicos-left,
+    .servicos-right {
+        flex: 0 0 50%;
+        width: 50%;
+        min-height: calc(100vh - 88px);
+        align-self: flex-start;
+    }
+
+    .servicos-left {
+        position: sticky;
+        top: 88px;
+    }
+
+    .profile-section {
+        flex-direction: row;
+    }
+
+    .profile-left,
+    .profile-right {
+        min-height: 90vh;
+    }
+
+    .contact-page {
+        flex-direction: row;
+    }
+
+    .contact-left,
+    .contact-right {
+        min-height: calc(100vh - 88px);
+    }
+
+    .newsletter-section {
+        flex-direction: row;
+    }
+
+    .newsletter-left {
+        flex: 2;
+        min-height: calc(90vh - 115px);
+    }
+
+    .newsletter-right {
+        flex: 2;
+        min-height: calc(90vh - 115px);
+    }
+}
