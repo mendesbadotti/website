@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Retail Design</title>
+    <meta name="description" content="MB Retail Design" />
+    <meta name="author" content="MB" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html"><strong>MB</strong> Retail Design</a>
+            </div>
+
+            <div class="menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#sobre" onclick="closeMenu()">Sobre</a>
+            <a href="#servicos" onclick="closeMenu()">Serviços</a>
+            <a href="contato.html" onclick="closeMenu()">Contato</a>
+            <div class="mobile-menu-social">
+                <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Split Hero -->
+    <main class="split-hero">
+
+        <!-- Left Panel -->
+        <section class="panel left-panel">
+            <!-- Add background image here -->
+        </section>
+
+        <!-- Right Panel: Sobre -->
+        <section class="panel right-panel">
+            <p>Cada projeto nasce de um pensamento integrado que conecta identidade, espaço e resultado comercial.</p>
+            <p>A MB é um estúdio de retail design especializado em criar marcas, espaços e ativações que movem o varejo. Atuamos em todo o ciclo: consultoria, estratégia, branding, design, visual merchandising, comunicação, campanhas e relações públicas, de forma integrada ou pontual, de acordo com a necessidade de cada cliente e momento do negócio.</p>
+        </section>
+
+    </main>
+
+    <!-- Opening Panel -->
+    <section class="opening-panel">
+        <h1 class="opening-phrase">Transformamos marcas em experiências e conexões em oportunidades.</h1>
+    </section>
+
+    <div class="hero-scroll-space"></div>
+
+    <!-- Portfolio Carousel -->
+    <section class="portfolio-section">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide"><!-- Add photo here --></div>
+                <div class="carousel-slide"><!-- Add photo here --></div>
+                <div class="carousel-slide"><!-- Add photo here --></div>
+                <div class="carousel-slide"><!-- Add photo here --></div>
+                <div class="carousel-slide"><!-- Add photo here --></div>
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-btn carousel-next" aria-label="Próximo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section class="servicos-section" id="servicos">
+
+        <div class="servicos-left">
+            <h2 class="servicos-title">Serviços</h2>
+            <div class="servicos-image">
+                <!-- Add image here -->
+            </div>
+        </div>
+
+        <div class="servicos-right">
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>Marca e Estratégia</span>
+                        <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Construímos e reposicionamos marcas com um pensamento integrado entre identidade, mercado e resultado comercial.</p>
+                        <ul class="accordion-list">
+                            <li>Consultoria de retail branding</li>
+                            <li>Diagnóstico de pontos de venda</li>
+                            <li>Estudo de público-alvo e comportamento de compra</li>
+                            <li>Posicionamento e conceito de loja</li>
+                            <li>Benchmarking e análise de concorrência</li>
+                            <li>Estratégia omnichannel</li>
+                            <li>Naming e criação de marca do zero</li>
+                            <li>Redesign e reposicionamento de marca</li>
+                            <li>Identidade visual completa</li>
+                            <li>Manual de marca</li>
+                            <li>Tom de voz e linguagem verbal</li>
+                            <li>Arquitetura de marca</li>
+                            <li>Storytelling e narrativa de marca</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>Espaço e Experiência</span>
+                        <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Materializamos a marca em cada ponto de contato, do espaço físico à jornada sensorial do cliente.</p>
+                        <ul class="accordion-list">
+                            <li>Identidade visual aplicada ao espaço</li>
+                            <li>Sinalização interna e externa</li>
+                            <li>Wayfinding e design de fachada</li>
+                            <li>Planejamento de exposição de produtos</li>
+                            <li>Design de vitrines e trocas sazonais</li>
+                            <li>Displays e expositores personalizados</li>
+                            <li>Manual de visual merchandising</li>
+                            <li>Treinamento de equipe em VM</li>
+                            <li>Treinamento de equipe em CX</li>
+                            <li>Customer journey mapping</li>
+                            <li>Design sensorial</li>
+                            <li>Experiências phygital</li>
+                            <li>Integração de tecnologia</li>
+                            <li>Formatos especiais: flagship stores, pop-ups, showrooms, corners e estandes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>Ativação e Conexão</span>
+                        <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Valorizamos a marca através de campanhas, experiências imersivas e conexões estratégicas.</p>
+                        <ul class="accordion-list">
+                            <li>Campanhas sazonais e de lançamento</li>
+                            <li>Campanhas de inauguração de loja</li>
+                            <li>Direção de arte</li>
+                            <li>Produção de conteúdo para redes sociais</li>
+                            <li>Materiais gráficos e digitais</li>
+                            <li>Campanhas integradas online e offline</li>
+                            <li>Ativações de marca e experiências promocionais</li>
+                            <li>Relações públicas e curadoria de conexões</li>
+                            <li>Gerenciamento de implementação e obra</li>
+                            <li>Roll-out e expansão para múltiplas unidades</li>
+                            <li>Projetos sustentáveis e economia circular</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <button class="cta-button"><a href="contato.html">ENTRE EM CONTATO</a></button>
+        </div>
+
+    </section>
+
+    <div class="page-end">
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="contato">
+
+        <div class="newsletter-left">
+            <h2 class="newsletter-title">Cultura + Design </h2>
+            <p class="newsletter-subtitle">Uma coletânea quinzenal de tendências, referências e ideias.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="text" placeholder="Nome" class="newsletter-input">
+                <input type="email" placeholder="Email" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">INSCREVER-SE</button>
+            </form>
+        </div>
+
+        <div class="newsletter-right">
+            <!-- Add image here -->
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <span><strong>Entre em contato:</strong><br><a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a></span>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon-white.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon-white.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p>© 2026 Mendes Badotti. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="./termos.html">Termos de Uso</a>
+                <a href="./cookie.html">Cookies</a>
+                <a href="./privacidade.html">Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    </div><!-- /.page-end -->
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Para garantir a melhor experiência possível, este site utiliza cookies essenciais e, com a sua permissão, cookies analíticos e outros cookies não essenciais. Você pode aceitar, recusar ou customizar as suas preferências a qualquer momento.
+            <a href="./cookie.html" target="_blank">Saiba mais</a>
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-all">Aceitar</button>
+            <button id="decline-all">Recusar</button>
+            <button id="customise">Customizar</button>
+        </div>
+    </div>
+
+    <!-- Preference Modal -->
+    <div id="preference-modal">
+        <div class="preference-box">
+            <h2>Preferências de Privacidade</h2>
+            <ul>
+                <li>
+                    <label for="strictly-necessary">Cookies essenciais</label>
+                    <input type="checkbox" checked disabled id="strictly-necessary">
+                </li>
+                <li>
+                    <label for="performance">Cookies de desempenho</label>
+                    <input type="checkbox" id="performance">
+                </li>
+                <li>
+                    <label for="functional">Cookies funcionais</label>
+                    <input type="checkbox" id="functional">
+                </li>
+                <li>
+                    <label for="targeting">Cookies de publicidade</label>
+                    <input type="checkbox" id="targeting">
+                </li>
+            </ul>
+            <a href="./cookie.html#cookie-policy" target="_blank">Saiba mais sobre nossa política de cookies</a>
+            <div class="buttons-modal">
+                <button id="save-preferences">Salvar Preferências</button>
+                <button id="preference-accept-all">Aceitar Todos</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript external file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — MB Retail Design</title>
+    <meta name="description" content="Entre em contato com a MB Retail Design" />
+    <meta name="author" content="MB" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html"><strong>MB</strong> Retail Design</a>
+            </div>
+
+            <div class="menu">
+                <a href="./index.html#sobre">Sobre</a>
+                <a href="./index.html#servicos">Serviços</a>
+                <a href="./contato.html">Contato</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html#sobre" onclick="closeMenu()">Sobre</a>
+            <a href="./index.html#servicos" onclick="closeMenu()">Serviços</a>
+            <a href="./contato.html" onclick="closeMenu()">Contato</a>
+            <div class="mobile-menu-social">
+                <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="contact-page">
+
+        <div class="contact-left">
+            <!-- Add image here -->
+        </div>
+
+        <div class="contact-right">
+            <h1 class="contact-title">Cada projeto começa com uma conversa. Preencha o formulário abaixo ou escreva para <a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a>.</h1>
+
+            <form class="contact-form" action="https://formsubmit.co/mendesbadotti@gmail.com" method="POST">
+                <div class="form-field">
+                    <label for="nome">Nome:*</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email:*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="telefone">Telefone:*</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa">
+                </div>
+
+                <div class="form-field">
+                    <label for="mensagem">Mensagem:*</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">ENVIAR</button>
+            </form>
+        </div>
+
+    </main>
+
+    <div class="page-end">
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="contato">
+
+        <div class="newsletter-left">
+            <h2 class="newsletter-title">Cultura + Design </h2>
+            <p class="newsletter-subtitle">Uma coletânea quinzenal de tendências, referências e ideias.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="text" placeholder="Nome" class="newsletter-input">
+                <input type="email" placeholder="Email" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">INSCREVER-SE</button>
+            </form>
+        </div>
+
+        <div class="newsletter-right">
+            <!-- Add image here -->
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <span><strong>Entre em contato:</strong><br><a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a></span>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon-white.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon-white.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p>© 2026 Mendes Badotti. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="./termos.html">Termos de Uso</a>
+                <a href="./cookie.html">Cookies</a>
+                <a href="./privacidade.html">Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    </div><!-- /.page-end -->
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Para garantir a melhor experiência possível, este site utiliza cookies essenciais e, com a sua permissão, cookies analíticos e outros cookies não essenciais. Você pode aceitar, recusar ou customizar as suas preferências a qualquer momento.
+            <a href="./cookie.html" target="_blank">Saiba mais</a>
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-all">Aceitar</button>
+            <button id="decline-all">Recusar</button>
+            <button id="customise">Customizar</button>
+        </div>
+    </div>
+
+    <!-- Preference Modal -->
+    <div id="preference-modal">
+        <div class="preference-box">
+            <h2>Preferências de Privacidade</h2>
+            <ul>
+                <li>
+                    <label for="strictly-necessary">Cookies essenciais</label>
+                    <input type="checkbox" checked disabled id="strictly-necessary">
+                </li>
+                <li>
+                    <label for="performance">Cookies de desempenho</label>
+                    <input type="checkbox" id="performance">
+                </li>
+                <li>
+                    <label for="functional">Cookies funcionais</label>
+                    <input type="checkbox" id="functional">
+                </li>
+                <li>
+                    <label for="targeting">Cookies de publicidade</label>
+                    <input type="checkbox" id="targeting">
+                </li>
+            </ul>
+            <a href="./cookie.html#cookie-policy" target="_blank">Saiba mais sobre nossa política de cookies</a>
+            <div class="buttons-modal">
+                <button id="save-preferences">Salvar Preferências</button>
+                <button id="preference-accept-all">Aceitar Todos</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
