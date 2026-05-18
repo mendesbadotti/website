@@ -11,10 +11,19 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2W4Z259ZB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F2W4Z259ZB');
+</script>
 
 <body>
 
@@ -38,6 +47,11 @@
                 <a href="#" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-icon.svg" alt="LinkedIn">
                 </a>
+                <div class="lang-switcher">
+                    <a href="./en/contact.html" class="lang-link">EN</a>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-current">PT</span>
+                </div>
                 <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
@@ -46,6 +60,11 @@
             <a href="./index.html#sobre" onclick="closeMenu()">Sobre</a>
             <a href="./index.html#servicos" onclick="closeMenu()">Serviços</a>
             <a href="./contato.html" onclick="closeMenu()">Contato</a>
+            <div class="lang-switcher">
+                <a href="./en/contact.html" class="lang-link">EN</a>
+                <span class="lang-sep">|</span>
+                <span class="lang-current">PT</span>
+            </div>
             <div class="mobile-menu-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
                     <img src="images/instagram-icon.svg" alt="Instagram">
@@ -61,13 +80,13 @@
     <main class="contact-page">
 
         <div class="contact-left">
-            <!-- Add image here -->
+            <img src="/images/MB_contato.webp" alt="MB Retail Design">
         </div>
 
         <div class="contact-right">
-            <h1 class="contact-title">Cada projeto começa com uma conversa. Preencha o formulário abaixo ou escreva para <a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a>.</h1>
+            <h1 class="contact-title">Cada projeto começa com uma conversa. Preencha o formulário abaixo ou escreva para <a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a>.</h1>
 
-            <form class="contact-form" action="https://formsubmit.co/mendesbadotti@gmail.com" method="POST">
+            <form class="contact-form" action="https://formsubmit.co/contato@mendesbadotti.com" method="POST">
                 <div class="form-field">
                     <label for="nome">Nome:*</label>
                     <input type="text" id="nome" name="nome" required>
@@ -124,7 +143,7 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-contact">
-                <span><strong>Entre em contato:</strong><br><a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a></span>
+                <span><strong>Entre em contato:</strong><br><a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a></span>
             </div>
             <div class="footer-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
