@@ -78,6 +78,32 @@ function subscribeNewsletter(e) {
     window.open('https://mbretaildesign.substack.com/subscribe?email=' + email + '&first_name=' + name, '_blank');
 }
 
+function scrollToSobre() {
+    var panel = document.querySelector('.opening-panel');
+    var target = panel ? panel.offsetHeight : Math.round(window.innerHeight * 0.7);
+    window.scrollTo({ top: target, behavior: 'smooth' });
+}
+
+// Handle Sobre nav links on this page (href="#sobre")
+document.querySelectorAll('a[href="#sobre"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu) mobileMenu.style.display = 'none';
+        scrollToSobre();
+    });
+});
+
+// Auto-scroll when arriving from another page via index.html#sobre
+if (window.location.hash === '#sobre') {
+    window.history.replaceState(null, '', window.location.pathname);
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+            scrollToSobre();
+        });
+    });
+}
+
 // Mobile menu toggle
 function toggleMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
