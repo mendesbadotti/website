@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
     <style>
@@ -30,7 +30,7 @@
         }
 
         .policy-updated {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: "Manrope", sans-serif;
             font-size: 0.8rem;
             color: #888;
             margin-bottom: 56px;
@@ -47,7 +47,7 @@
 
         .policy-page p,
         .policy-page li {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: "Manrope", sans-serif;
             font-size: 0.9rem;
             color: #4a4540;
             line-height: 1.8;
@@ -89,6 +89,16 @@
     </style>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2W4Z259ZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F2W4Z259ZB');
+</script>
+
 <body>
 
     <!-- Navigation Bar -->
@@ -111,6 +121,11 @@
                 <a href="#" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-icon.svg" alt="LinkedIn">
                 </a>
+                <div class="lang-switcher">
+                    <a href="./en/terms.html" class="lang-link">EN</a>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-current">PT</span>
+                </div>
                 <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
@@ -119,6 +134,11 @@
             <a href="./index.html#sobre" onclick="closeMenu()">Sobre</a>
             <a href="./index.html#servicos" onclick="closeMenu()">Serviços</a>
             <a href="./contato.html" onclick="closeMenu()">Contato</a>
+            <div class="lang-switcher">
+                <a href="./en/terms.html" class="lang-link">EN</a>
+                <span class="lang-sep">|</span>
+                <span class="lang-current">PT</span>
+            </div>
             <div class="mobile-menu-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
                     <img src="images/instagram-icon.svg" alt="Instagram">
@@ -164,7 +184,7 @@
 
         <h2>5. Propriedade intelectual</h2>
         <p>Todo o conteúdo disponível neste site — incluindo, sem limitação, textos, imagens, logotipos, identidade visual, layout, marcas e demais elementos — é de propriedade exclusiva da MB ou de seus licenciadores, e está protegido pela legislação brasileira de propriedade intelectual, em especial pela <strong>Lei nº 9.610/1998</strong> (Lei de Direitos Autorais) e pela <strong>Lei nº 9.279/1996</strong> (Lei de Propriedade Industrial).</p>
-        <p>É expressamente proibida qualquer reprodução, total ou parcial, sem autorização prévia e por escrito da MB. Solicitações de uso devem ser encaminhadas para <a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a>.</p>
+        <p>É expressamente proibida qualquer reprodução, total ou parcial, sem autorização prévia e por escrito da MB. Solicitações de uso devem ser encaminhadas para <a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a>.</p>
 
         <h2>6. Isenção de responsabilidade</h2>
         <p>O site é fornecido "no estado em que se encontra", sem garantias de qualquer natureza, expressas ou implícitas. A MB não garante que:</p>
@@ -192,7 +212,7 @@
         <p>
             <strong>MB Retail Design</strong><br>
             Curitiba, Paraná — Brasil<br>
-            E-mail: <a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a>
+            E-mail: <a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a>
         </p>
 
         <hr class="policy-divider">
@@ -221,7 +241,7 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-contact">
-                <span><strong>Entre em contato:</strong><br><a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a></span>
+                <span><strong>Entre em contato:</strong><br><a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a></span>
             </div>
             <div class="footer-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
