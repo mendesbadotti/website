@@ -8,13 +8,28 @@
     <meta name="description" content="MB Retail Design" />
     <meta name="author" content="MB" />
 
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2W4Z259ZB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F2W4Z259ZB');
+</script>
 
 <body>
 
@@ -38,14 +53,24 @@
                 <a href="#" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-icon.svg" alt="LinkedIn">
                 </a>
+                <div class="lang-switcher">
+                    <a href="./en/index.html" class="lang-link">EN</a>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-current">PT</span>
+                </div>
                 <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
 
         <div id="mobile-menu" class="mobile-menu">
-            <a href="#sobre" onclick="closeMenu()">Sobre</a>
+            <a href="#sobre">Sobre</a>
             <a href="#servicos" onclick="closeMenu()">Serviços</a>
             <a href="contato.html" onclick="closeMenu()">Contato</a>
+            <div class="lang-switcher">
+                <a href="./en/index.html" class="lang-link">EN</a>
+                <span class="lang-sep">|</span>
+                <span class="lang-current">PT</span>
+            </div>
             <div class="mobile-menu-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
                     <img src="images/instagram-icon.svg" alt="Instagram">
@@ -62,13 +87,13 @@
 
         <!-- Left Panel -->
         <section class="panel left-panel">
-            <!-- Add background image here -->
+            <img src="/images/MB_sobre.webp" alt="MB Retail Design">
         </section>
 
         <!-- Right Panel: Sobre -->
         <section class="panel right-panel">
             <p>Cada projeto nasce de um pensamento integrado que conecta identidade, espaço e resultado comercial.</p>
-            <p>A MB é um estúdio de retail design especializado em criar marcas, espaços e ativações que movem o varejo. Atuamos em todo o ciclo: consultoria, estratégia, branding, design, visual merchandising, comunicação, campanhas e relações públicas, de forma integrada ou pontual, de acordo com a necessidade de cada cliente e momento do negócio.</p>
+            <p>A MB é um estúdio de retail design especializado em criar marcas, espaços e ativações que movem o varejo. Atuamos em todo o ciclo: consultoria, estratégia, branding, design, visual merchandising, comunicação, campanhas e relações públicas, de forma integrada ou pontual, de acordo com a necessidade de cada cliente e o momento do negócio.</p>
         </section>
 
     </main>
@@ -104,13 +129,14 @@
     <section class="servicos-section" id="servicos">
 
         <div class="servicos-left">
-            <h2 class="servicos-title">Serviços</h2>
             <div class="servicos-image">
-                <!-- Add image here -->
+                <img src="/images/MB_servicos.webp" alt="MB Retail Design">
             </div>
         </div>
 
         <div class="servicos-right">
+
+            <h2 class="servicos-title">Serviços</h2>
             <div class="accordion">
 
                 <div class="accordion-item">
@@ -118,8 +144,8 @@
                         <span>Marca e Estratégia</span>
                         <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
+                    <p class="accordion-desc">Construímos e reposicionamos marcas com um pensamento integrado entre identidade, mercado e resultado comercial.</p>
                     <div class="accordion-body">
-                        <p>Construímos e reposicionamos marcas com um pensamento integrado entre identidade, mercado e resultado comercial.</p>
                         <ul class="accordion-list">
                             <li>Consultoria de retail branding</li>
                             <li>Diagnóstico de pontos de venda</li>
@@ -143,8 +169,8 @@
                         <span>Espaço e Experiência</span>
                         <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
+                    <p class="accordion-desc">Materializamos a marca em cada ponto de contato, do espaço físico à jornada sensorial do cliente.</p>
                     <div class="accordion-body">
-                        <p>Materializamos a marca em cada ponto de contato, do espaço físico à jornada sensorial do cliente.</p>
                         <ul class="accordion-list">
                             <li>Identidade visual aplicada ao espaço</li>
                             <li>Sinalização interna e externa</li>
@@ -169,8 +195,8 @@
                         <span>Ativação e Conexão</span>
                         <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
+                    <p class="accordion-desc">Valorizamos a marca através de campanhas, experiências imersivas e conexões estratégicas.</p>
                     <div class="accordion-body">
-                        <p>Valorizamos a marca através de campanhas, experiências imersivas e conexões estratégicas.</p>
                         <ul class="accordion-list">
                             <li>Campanhas sazonais e de lançamento</li>
                             <li>Campanhas de inauguração de loja</li>
@@ -218,7 +244,7 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-contact">
-                <span><strong>Entre em contato:</strong><br><a href="mailto:mendesbadotti@gmail.com">mendesbadotti@gmail.com</a></span>
+                <span><strong>Entre em contato:</strong><br><a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a></span>
             </div>
             <div class="footer-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
