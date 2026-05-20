@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-GB">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,17 @@
     <meta name="description" content="MB Retail Design" />
     <meta name="author" content="MB" />
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -41,42 +41,43 @@
             </div>
 
             <div class="menu">
-                <a href="#sobre">Sobre</a>
-                <a href="#servicos">Serviços</a>
-                <a href="contato.html">Contato</a>
+                <a href="#sobre">About</a>
+                <a href="#servicos">Services</a>
+                <a href="./contact.html">Contact</a>
             </div>
 
             <div class="social-icons">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
-                    <img src="images/instagram-icon.svg" alt="Instagram">
+                    <img src="../images/instagram-icon.svg" alt="Instagram">
                 </a>
                 <a href="#" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                    <img src="../images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a href="https://wa.me/5541988207628" target="_blank" aria-label="WhatsApp">
+                    <img src="../images/whatsapp-icon.png" alt="WhatsApp">
                 </a>
                 <div class="lang-switcher">
-                    <a href="./en/index.html" class="lang-link">EN</a>
+                    <span class="lang-current">EN</span>
                     <span class="lang-sep">|</span>
-                    <span class="lang-current">PT</span>
+                    <a href="../index.html" class="lang-link">PT</a>
                 </div>
                 <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
 
         <div id="mobile-menu" class="mobile-menu">
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos" onclick="closeMenu()">Serviços</a>
-            <a href="contato.html" onclick="closeMenu()">Contato</a>
-            <div class="lang-switcher">
-                <a href="./en/index.html" class="lang-link">EN</a>
-                <span class="lang-sep">|</span>
-                <span class="lang-current">PT</span>
-            </div>
+            <a href="#sobre">About</a>
+            <a href="#servicos" onclick="closeMenu()">Services</a>
+            <a href="./contact.html" onclick="closeMenu()">Contact</a>
             <div class="mobile-menu-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
-                    <img src="images/instagram-icon.svg" alt="Instagram">
+                    <img src="../images/instagram-icon.svg" alt="Instagram">
                 </a>
                 <a href="#" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                    <img src="../images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a href="https://wa.me/5541988207628" target="_blank" aria-label="WhatsApp">
+                    <img src="../images/whatsapp-icon.png" alt="WhatsApp">
                 </a>
             </div>
         </div>
@@ -84,23 +85,25 @@
 
     <!-- Split Hero -->
     <main class="split-hero">
+        <div class="split-hero-inner">
 
-        <!-- Left Panel -->
-        <section class="panel left-panel">
-            <img src="/images/MB_sobre.webp" alt="MB Retail Design">
-        </section>
+            <!-- Left Panel -->
+            <section class="panel left-panel">
+                <img src="../images/MB_sobre.webp" alt="MB Retail Design">
+            </section>
 
-        <!-- Right Panel: Sobre -->
-        <section class="panel right-panel">
-            <p>Cada projeto nasce de um pensamento integrado que conecta identidade, espaço e resultado comercial.</p>
-            <p>A MB é um estúdio de retail design especializado em criar marcas, espaços e ativações que movem o varejo. Atuamos em todo o ciclo: consultoria, estratégia, branding, design, visual merchandising, comunicação, campanhas e relações públicas, de forma integrada ou pontual, de acordo com a necessidade de cada cliente e o momento do negócio.</p>
-        </section>
+            <!-- Right Panel: About -->
+            <section class="panel right-panel">
+                <p>MB is a retail design studio specialising in creating brands, spaces, and activations that move retail. We work across the full cycle: consultancy, strategy, branding, design, visual merchandising, communications, campaigns, and public relations according to each client's needs and the stage of their business.</p>
+                <p>Every project begins with an integrated vision connecting identity, space, and commercial outcome.</p>
+            </section>
 
+        </div>
     </main>
 
     <!-- Opening Panel -->
     <section class="opening-panel">
-        <h1 class="opening-phrase">Transformamos marcas em experiências e conexões em oportunidades.</h1>
+        <h1 class="opening-phrase">We transform brands into experiences, and connections into opportunities.</h1>
     </section>
 
     <div class="hero-scroll-space"></div>
@@ -115,106 +118,105 @@
                 <div class="carousel-slide"><!-- Add photo here --></div>
                 <div class="carousel-slide"><!-- Add photo here --></div>
             </div>
-            <button class="carousel-btn carousel-prev" aria-label="Anterior">
+            <button class="carousel-btn carousel-prev" aria-label="Previous">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
             </button>
-            <button class="carousel-btn carousel-next" aria-label="Próximo">
+            <button class="carousel-btn carousel-next" aria-label="Next">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
             <div class="carousel-dots"></div>
         </div>
     </section>
 
-    <!-- Serviços Section -->
+    <!-- Services Section -->
     <section class="servicos-section" id="servicos">
 
         <div class="servicos-left">
             <div class="servicos-image">
-                <img src="/images/MB_servicos.webp" alt="MB Retail Design">
+                <img src="../images/MB_servicos.webp" alt="MB Retail Design">
             </div>
         </div>
 
         <div class="servicos-right">
-
-            <h2 class="servicos-title">Serviços</h2>
+            <h2 class="servicos-title">Services</h2>
             <div class="accordion">
 
                 <div class="accordion-item">
                     <button class="accordion-trigger">
-                        <span>Marca e Estratégia</span>
+                        <span>Brand &amp; Strategy</span>
                         <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
-                    <p class="accordion-desc">Construímos e reposicionamos marcas com um pensamento integrado entre identidade, mercado e resultado comercial.</p>
+                    <p class="accordion-desc">We build and reposition brands through an integrated perspective connecting identity, market positioning, and commercial results.</p>
                     <div class="accordion-body">
                         <ul class="accordion-list">
-                            <li>Consultoria de retail branding</li>
-                            <li>Diagnóstico de pontos de venda</li>
-                            <li>Estudo de público-alvo e comportamento de compra</li>
-                            <li>Posicionamento e conceito de loja</li>
-                            <li>Benchmarking e análise de concorrência</li>
-                            <li>Estratégia omnichannel</li>
-                            <li>Naming e criação de marca do zero</li>
-                            <li>Redesign e reposicionamento de marca</li>
-                            <li>Identidade visual completa</li>
-                            <li>Manual de marca</li>
-                            <li>Tom de voz e linguagem verbal</li>
-                            <li>Arquitetura de marca</li>
-                            <li>Storytelling e narrativa de marca</li>
+                            <li>Retail branding consultancy</li>
+                            <li>Point-of-sale diagnosis</li>
+                            <li>Target audience and purchase behaviour research</li>
+                            <li>Store positioning and concept</li>
+                            <li>Benchmarking and competitor analysis</li>
+                            <li>Omnichannel strategy</li>
+                            <li>Naming and brand creation from scratch</li>
+                            <li>Brand redesign and repositioning</li>
+                            <li>Full visual identity</li>
+                            <li>Brand guidelines</li>
+                            <li>Tone of voice and verbal language</li>
+                            <li>Brand architecture</li>
+                            <li>Brand storytelling and narrative</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <button class="accordion-trigger">
-                        <span>Espaço e Experiência</span>
+                        <span>Space &amp; Experience</span>
                         <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
-                    <p class="accordion-desc">Materializamos a marca em cada ponto de contato, do espaço físico à jornada sensorial do cliente.</p>
+                    <p class="accordion-desc">We bring the brand to life at every touchpoint, from the physical space to the customer's sensory journey.</p>
                     <div class="accordion-body">
                         <ul class="accordion-list">
-                            <li>Identidade visual aplicada ao espaço</li>
-                            <li>Sinalização interna e externa</li>
-                            <li>Wayfinding e design de fachada</li>
-                            <li>Planejamento de exposição de produtos</li>
-                            <li>Design de vitrines e trocas sazonais</li>
-                            <li>Displays e expositores personalizados</li>
-                            <li>Manual de visual merchandising</li>
-                            <li>Treinamento de equipe em VM</li>
-                            <li>Treinamento de equipe em CX</li>
+                            <li>Visual identity applied to the space</li>
+                            <li>Internal and external signage</li>
+                            <li>Wayfinding and façade design</li>
+                            <li>Product display planning</li>
+                            <li>Window display design and seasonal changes</li>
+                            <li>Custom displays and product fixtures</li>
+                            <li>Visual merchandising guidelines</li>
+                            <li>Team training in visual merchandising</li>
+                            <li>Team training in customer experience</li>
                             <li>Customer journey mapping</li>
-                            <li>Design sensorial</li>
-                            <li>Experiências phygital</li>
-                            <li>Integração de tecnologia</li>
-                            <li>Formatos especiais: flagship stores, pop-ups, showrooms, corners e estandes</li>
+                            <li>Sensory design</li>
+                            <li>Phygital experiences</li>
+                            <li>Technology integration</li>
+                            <li>Special formats: flagship stores, pop-ups, showrooms, corners, and exhibition stands</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <button class="accordion-trigger">
-                        <span>Ativação e Conexão</span>
+                        <span>Activation &amp; Connection</span>
                         <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
-                    <p class="accordion-desc">Valorizamos a marca através de campanhas, experiências imersivas e conexões estratégicas.</p>
+                    <p class="accordion-desc">We elevate brands through campaigns, immersive experiences, and strategic connections.</p>
                     <div class="accordion-body">
                         <ul class="accordion-list">
-                            <li>Campanhas sazonais e de lançamento</li>
-                            <li>Campanhas de inauguração de loja</li>
-                            <li>Direção de arte</li>
-                            <li>Produção de conteúdo para redes sociais</li>
-                            <li>Materiais gráficos e digitais</li>
-                            <li>Campanhas integradas online e offline</li>
-                            <li>Ativações de marca e experiências promocionais</li>
-                            <li>Relações públicas e curadoria de conexões</li>
-                            <li>Gerenciamento de implementação e obra</li>
-                            <li>Roll-out e expansão para múltiplas unidades</li>
-                            <li>Projetos sustentáveis e economia circular</li>
+                            <li>Seasonal and launch campaigns</li>
+                            <li>Store opening campaigns</li>
+                            <li>Art direction</li>
+                            <li>Social media content production</li>
+                            <li>Graphic and digital materials</li>
+                            <li>Integrated online and offline campaigns</li>
+                            <li>Brand activations and promotional experiences</li>
+                            <li>Public relations and connection curation</li>
+                            <li>Implementation and project management</li>
+                            <li>Roll-out and expansion to multiple locations</li>
+                            <li>Sustainable projects and circular economy</li>
                         </ul>
                     </div>
                 </div>
 
             </div>
-            <button class="cta-button"><a href="contato.html">ENTRE EM CONTATO</a></button>
+            <button class="cta-button"><a href="./contact.html">GET IN TOUCH</a></button>
         </div>
 
     </section>
@@ -225,12 +227,12 @@
     <section class="newsletter-section" id="contato">
 
         <div class="newsletter-left">
-            <h2 class="newsletter-title">Cultura + Design </h2>
-            <p class="newsletter-subtitle">Uma coletânea quinzenal de tendências, referências e ideias.</p>
+            <h2 class="newsletter-title">Culture + Design</h2>
+            <p class="newsletter-subtitle">A fortnightly curation of trends, references, and ideas.</p>
             <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-                <input type="text" placeholder="Nome" class="newsletter-input">
+                <input type="text" placeholder="Name" class="newsletter-input">
                 <input type="email" placeholder="Email" class="newsletter-input" required>
-                <button type="submit" class="newsletter-btn">INSCREVER-SE</button>
+                <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
             </form>
         </div>
 
@@ -244,24 +246,27 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-contact">
-                <span><strong>Entre em contato:</strong><br><a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a></span>
+                <span><strong>Get in touch:</strong><br><a href="mailto:contato@mendesbadotti.com">contato@mendesbadotti.com</a></span>
             </div>
             <div class="footer-social">
                 <a href="https://www.instagram.com/mbretaildesign/" target="_blank" aria-label="Instagram">
-                    <img src="images/instagram-icon-white.svg" alt="Instagram">
+                    <img src="../images/instagram-icon-white.svg" alt="Instagram">
                 </a>
                 <a href="#" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin-icon-white.svg" alt="LinkedIn">
+                    <img src="../images/linkedin-icon-white.svg" alt="LinkedIn">
+                </a>
+                <a href="https://wa.me/5541988207628" target="_blank" aria-label="WhatsApp">
+                    <img src="../images/whatsapp-icon-white.png" alt="WhatsApp">
                 </a>
             </div>
         </div>
         <hr class="footer-divider">
         <div class="footer-bottom">
-            <p>© 2026 Mendes Badotti. Todos os direitos reservados.</p>
+            <p>© 2026 Mendes Badotti. All rights reserved.</p>
             <div class="footer-links">
-                <a href="./termos.html">Termos de Uso</a>
-                <a href="./cookie.html">Cookies</a>
-                <a href="./privacidade.html">Privacidade</a>
+                <a href="./terms.html">Terms of Use</a>
+                <a href="./cookies.html">Cookies</a>
+                <a href="./privacy.html">Privacy</a>
             </div>
         </div>
     </footer>
@@ -270,48 +275,48 @@
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner">
-        <p>Para garantir a melhor experiência possível, este site utiliza cookies essenciais e, com a sua permissão, cookies analíticos e outros cookies não essenciais. Você pode aceitar, recusar ou customizar as suas preferências a qualquer momento.
-            <a href="./cookie.html" target="_blank">Saiba mais</a>
+        <p>To provide the best possible experience, this website uses essential cookies and, with your permission, analytics and other non-essential cookies. You may accept, decline, or customise your preferences at any time.
+            <a href="./cookies.html" target="_blank">Learn more</a>
         </p>
         <div class="cookie-buttons">
-            <button id="accept-all">Aceitar</button>
-            <button id="decline-all">Recusar</button>
-            <button id="customise">Customizar</button>
+            <button id="accept-all">Accept</button>
+            <button id="decline-all">Decline</button>
+            <button id="customise">Customise</button>
         </div>
     </div>
 
     <!-- Preference Modal -->
     <div id="preference-modal">
         <div class="preference-box">
-            <h2>Preferências de Privacidade</h2>
+            <h2>Privacy Preferences</h2>
             <ul>
                 <li>
-                    <label for="strictly-necessary">Cookies essenciais</label>
+                    <label for="strictly-necessary">Essential cookies</label>
                     <input type="checkbox" checked disabled id="strictly-necessary">
                 </li>
                 <li>
-                    <label for="performance">Cookies de desempenho</label>
+                    <label for="performance">Performance cookies</label>
                     <input type="checkbox" id="performance">
                 </li>
                 <li>
-                    <label for="functional">Cookies funcionais</label>
+                    <label for="functional">Functional cookies</label>
                     <input type="checkbox" id="functional">
                 </li>
                 <li>
-                    <label for="targeting">Cookies de publicidade</label>
+                    <label for="targeting">Advertising cookies</label>
                     <input type="checkbox" id="targeting">
                 </li>
             </ul>
-            <a href="./cookie.html#cookie-policy" target="_blank">Saiba mais sobre nossa política de cookies</a>
+            <a href="./cookies.html#cookie-policy" target="_blank">Learn more about our cookie policy</a>
             <div class="buttons-modal">
-                <button id="save-preferences">Salvar Preferências</button>
-                <button id="preference-accept-all">Aceitar Todos</button>
+                <button id="save-preferences">Save Preferences</button>
+                <button id="preference-accept-all">Accept All</button>
             </div>
         </div>
     </div>
 
     <!-- JavaScript external file -->
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
