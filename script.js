@@ -5,6 +5,8 @@
     var newsletter = document.querySelector('.newsletter-section');
     if (!header) return;
 
+    var splitHeroInner = document.querySelector('.split-hero-inner');
+
     function updatePanel() {
         var onDark = newsletter && newsletter.getBoundingClientRect().top < window.innerHeight;
 
@@ -14,6 +16,15 @@
             panel.style.transform = 'translateY(-' + Math.min(y, panelH) + 'px)';
             var panelBottom = panel.getBoundingClientRect().bottom;
             onDark = onDark || panelBottom > 88;
+
+            // On mobile: after the opening panel is gone, scroll the split-hero inner
+            // to transition from the image section to the text section
+            if (splitHeroInner && window.innerWidth < 768) {
+                var innerScroll = Math.min(Math.max(0, y - panelH), panelH);
+                splitHeroInner.style.transform = 'translateY(-' + innerScroll + 'px)';
+            } else if (splitHeroInner) {
+                splitHeroInner.style.transform = '';
+            }
         }
 
         if (onDark) {
