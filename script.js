@@ -5,7 +5,9 @@
     var newsletter = document.querySelector('.newsletter-section');
     if (!header) return;
 
+    var splitHero = document.querySelector('.split-hero');
     var splitHeroInner = document.querySelector('.split-hero-inner');
+    var servicos = document.querySelector('.servicos-section');
 
     function updatePanel() {
         var onDark = newsletter && newsletter.getBoundingClientRect().top < window.innerHeight;
@@ -25,6 +27,13 @@
             } else if (splitHeroInner) {
                 splitHeroInner.style.transform = '';
             }
+        }
+
+        // Hide split-hero once servicos fully covers it so elastic overscroll
+        // can never reveal it below the footer or above the sobre section
+        if (splitHero && servicos) {
+            splitHero.style.visibility = servicos.getBoundingClientRect().top <= 88
+                ? 'hidden' : 'visible';
         }
 
         if (onDark) {
