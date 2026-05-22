@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 88px;
+    overscroll-behavior: none;
 }
 
 html.snap {
@@ -43,7 +44,7 @@ a:hover {
 body {
     font-family: "Manrope", sans-serif;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: #353229;
 }
 
 /* Typography */
